@@ -1,0 +1,2 @@
+AOS.init();const eventDate=new Date("Aug 12, 2026 19:00:00"),eventTimeStamp=eventDate.getTime(),hoursCount=setInterval(function(){const e=(new Date).getTime(),t=eventTimeStamp-e,n=864e5,o=36e5,a=Math.floor(t/n),r=Math.floor(t%n/o),m=Math.floor(t%o/6e4),i=Math.floor(t%6e4/1e3);document.getElementById("count").innerHTML=`${a}d ${r}h ${m}m ${i}s`,t<0&&(clearInterval(hoursCount),document.getElementById("count").innerHTML="Evento expirado")},1e3);
+//# sourceMappingURL=index.221e40ee.js.map
